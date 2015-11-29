@@ -18,7 +18,7 @@ var midleware = {
 app.use(midleware.logger);
 
 app.get("/about", midleware.requireAuthentication, function (req, res) {
-	res.send("About Hello Express!");
+	res.send("About us!");
 });
 
 app.use(express.static(__dirname + "/public"));
